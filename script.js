@@ -28,6 +28,14 @@ setInitialMessage();
 function appendMessage(sender, message) {
   const messageElement = document.createElement("div");
   messageElement.classList.add("msg", sender);
+
+  // Add distinct styles for user and assistant messages
+  if (sender === "user") {
+    messageElement.classList.add("user-bubble");
+  } else if (sender === "ai") {
+    messageElement.classList.add("assistant-bubble");
+  }
+
   messageElement.textContent = message;
   chatWindow.appendChild(messageElement);
   chatWindow.scrollTop = chatWindow.scrollHeight; // Auto-scroll to the latest message
