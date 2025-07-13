@@ -49,6 +49,30 @@ body {
       transparent 199px,
       var(--accent-color) 200px,
       transparent 201px
+    ),
+    radial-gradient(
+      circle at 10% 60%,
+      transparent 119px,
+      #e40046 120px,
+      transparent 121px
+    ),
+    radial-gradient(
+      circle at 70% 20%,
+      transparent 179px,
+      #e40046 180px,
+      transparent 181px
+    ),
+    radial-gradient(
+      circle at 30% 80%,
+      transparent 249px,
+      #e40046 250px,
+      transparent 251px
+    ),
+    radial-gradient(
+      circle at 85% 50%,
+      transparent 199px,
+      #e40046 200px,
+      transparent 201px
     );
   background-size: 100% 100%;
   display: flex;
@@ -177,6 +201,7 @@ body {
   text-align: center;
   font-size: 14px;
   color: var(--primary-color);
+  margin-top: 200px; /* Further increase top margin to lower the footer */
 }
 
 .site-footer nav {
